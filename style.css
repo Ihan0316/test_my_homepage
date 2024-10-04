@@ -183,3 +183,8 @@ img {
 .nav-link a:hover {
     color: #0056b3;
 }
+
+/* 이미지 사이 간격 추가 */
+#article img {
+    margin: 10px 0;
+}
