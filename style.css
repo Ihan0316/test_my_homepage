@@ -150,3 +150,10 @@ img {
     width: 30%;
     border-radius: 12px;
 }
+
+#mainlink a{
+    color: #0071e3;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}

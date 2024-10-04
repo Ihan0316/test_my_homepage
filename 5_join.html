@@ -28,15 +28,18 @@
         <div class="link-container">
             <a href="4_login.html">이미 계정이 있으신가요? 로그인</a>
         </div>
-    </div>
+        <div class="link-container">
+            <a href="index.html">메인화면 가기</a>
 
-    <script>
-        // 프로필 이미지 미리보기 기능
-        function loadFile(event) {
-            var image = document.getElementById('profileImage');
-            image.src = URL.createObjectURL(event.target.files[0]);
-        }
-    </script>
+        </div>
+
+        <script>
+            // 프로필 이미지 미리보기 기능
+            function loadFile(event) {
+                var image = document.getElementById('profileImage');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
 
 </body>
 
