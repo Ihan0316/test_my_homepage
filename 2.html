@@ -1,24 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <title>쿵이소개 </title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿵이 소개 - 조이한</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        h1 a:hover {
+            text-decoration: underline;
+        }
+
+        #grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-right: 40px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        ul li a {
+            color: #0071e3;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            font-size: 18px;
+            color: #1d1d1f;
+        }
+
+        #article h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+
+        #article p {
+            line-height: 1.6;
+        }
+
+        #article a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        #article a:hover {
+            text-decoration: underline;
+        }
+
+        #article img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
-    <h1><a href="index.html">자기소개 - 조이한</a></h1>
-    <ul>
-        <li><a href="1.html">하루소개</a></li>
-        <li><a href="2.html">쿵이소개</a></li>
-        <li><a href="3.html">집가구싶당</a></li>
-    </ul>
-    <h2>쿵이소개</h2>
-    <p><a href="https://namu.wiki/w/말티푸" title="쿵이 소개 - 품종">쿵이 소개 - 말티푸
-        </a> 우리 쿵이는 귀엽지만 <strong>너무 착해서 문제에요..</strong> 집에 도둑들면 금고위치 알려줄거 같아요</p>
-    <img src="koong.jpeg" width="30%">
-    <p style="margin-top: 40px;">
-    </p>
+    <h1>자기소개 - 쿵이</h1>
+    <h3><a href="index.html">HOME</a></h3>
+    <div id="grid">
+        <ul>
+            <li><a href="1.html">하루소개</a></li>
+            <li><a href="2.html">쿵이소개</a></li>
+            <li><a href="3.html">집가구싶당...</a></li>
+        </ul>
+        <div id="article">
+            <h2>쿵이소개</h2>
+            <p><a href="https://namu.wiki/w/말티푸" title="쿵이 소개 - 품종">쿵이 소개 - 말티푸</a> 우리 쿵이는 귀엽지만 <strong>너무 착해서
+                    문제에요..</strong> 집에 도둑들면 금고위치 알려줄거 같아요</p>
+            <img src="koong.jpeg" alt="쿵이 사진" width="50%">
+            <p style="margin-top: 40px;">
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

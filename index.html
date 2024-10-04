@@ -1,24 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-   <title>자기소개 - 조이한 </title>
-   <meta charset="utf-8">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>자기소개 - 조이한</title>
+   <style>
+      body {
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+         background-color: #f5f5f7;
+         margin: 0;
+         padding: 0;
+      }
+
+      h1 {
+         color: #1d1d1f;
+         font-size: 32px;
+         text-align: center;
+         margin-top: 40px;
+      }
+
+      h1 a {
+         color: #0071e3;
+         text-decoration: none;
+      }
+
+      h1 a:hover {
+         text-decoration: underline;
+      }
+
+      #grid {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         padding: 40px;
+      }
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin-right: 40px;
+      }
+
+      ol {
+         list-style: decimal;
+         padding-left: 20px;
+      }
+
+      ul li,
+      ol li {
+         margin-bottom: 15px;
+      }
+
+      ul li a,
+      ol li a {
+         color: #0071e3;
+         text-decoration: none;
+         font-size: 18px;
+         font-weight: 600;
+      }
+
+      ul li a:hover,
+      ol li a:hover {
+         text-decoration: underline;
+      }
+
+      #article {
+         background-color: white;
+         padding: 30px;
+         border-radius: 12px;
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+         max-width: 600px;
+         font-size: 18px;
+         color: #1d1d1f;
+      }
+
+      #article h2 {
+         font-size: 24px;
+         font-weight: 600;
+         margin-bottom: 20px;
+         color: #1d1d1f;
+      }
+
+      #article p {
+         line-height: 1.6;
+         color: #1d1d1f;
+      }
+
+      .nav-link {
+         text-align: center;
+         margin-top: 20px;
+      }
+
+      .nav-link a {
+         color: #0071e3;
+         text-decoration: none;
+      }
+
+      .nav-link a:hover {
+         text-decoration: underline;
+      }
+   </style>
 </head>
 
 <body>
-   <h1>조이한 홈페이지</h1>
-   <ul>
-      <h1><a href="index.html">자기소개 - 조이한</a></h1>
-      <ol>
-         <li><a href="1.html">하루소개</a></li>
-         <li><a href="2.html">쿵이소개</a></li>
-         <li><a href="3.html">집가구싶당....</a></li>
-      </ol>
-      <h2>안녕하세요 저는 조이한입니다.</h2>
-      <p style="margin-top: 40px;">
-         저는 조이한이구요 잘 부탁드립니다!!
-      </p>
+   <h1>WEB</h1>
+   <div id="grid">
+      <ul>
+         <h1><a href="index.html">자기소개 - 조이한</a></h1>
+         <ol>
+            <li><a href="1.html">하루소개</a></li>
+            <li><a href="2.html">쿵이소개</a></li>
+            <li><a href="3.html">집가구싶당....</a></li>
+         </ol>
+      </ul>
+      <div id="article">
+         <h2>안녕하세요 저는 조이한입니다.</h2>
+         <p style="margin-top: 40px;">
+            저는 조이한이구요 잘 부탁드립니다!!
+         </p>
+      </div>
+   </div>
+   <div class="nav-link">
+      <a href="4_login.html">로그인 페이지로 이동</a>
+   </div>
 </body>
 
 </html>
