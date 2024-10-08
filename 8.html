@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini test</title>
+    <style>
+        .font {
+            font-style: oblique;
+        }
+
+        div.fontbox {
+            background-color: rgb(30, 50, 98);
+            color: azure;
+        }
+
+        a {
+            background-color: blueviolet;
+            color: antiquewhite;
+            padding: 5px 10px;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        .fontstyle {
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 600;
+            font-size: xx-large;
+        }
+
+        .listtest li {
+            background-image: url(img/list_icon.png);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            padding-left: 30px;
+        }
+
+        .listtest {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .boxsize {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            align-content: space-around;
+            box-shadow: 5px 5px 30px 15px;
+        }
+        .boxbackground{
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            width: 300px;
+            height: 200px;
+        }
+
+        .gradient{
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>5단원</h1>
+    <p>input, placeholder, label, radio, autofocus, checked</p>
+    <form action="login" method="post">
+        <fieldset>
+            <label for="username">사용자 이름:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" autofocus required>
+
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <button type="submit">로그인</button>
+        </fieldset>
+
+        <p>집에 가고 싶으면 간다, 아니면 안간다</p>
+        <label for="go-home1">
+            <input type="radio" id="go-home1" name="go-home" value="간다" checked> 간다
+        </label>
+        <label for="go-home2">
+            <input type="radio" id="go-home2" name="go-home" value="안간다"> 안간다
+        </label>
+    </form>
+
+
+
+    <h1>6단원</h1>
+    <p>font-style, background-color, padding, margin, text-decoration</p>
+    <div class="fontbox">
+        <p class="font">6단원 미니테스트중...</p>
+    </div>
+    <div class="site">
+        <a href="https://www.naver.com">네이버</a>
+        <a href="https://www.google.com">구글</a>
+    </div>
+
+
+
+    <h1>7단원</h1>
+    <p>font-family, font-size, font-weight, list-style</p>
+    <p class="fontstyle">폰트스타일 테스트..</p>
+    <ul class="listtest">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>
+
+
+
+    <h1>8단원</h1>
+    <p>width, height, padding, border, margin, box-shadow</p>
+    <p class="boxsize">box-sizing test</p>
+
+
+
+    <h1>9단원</h1>
+    <p>background-image, background-size</p>
+    <p class="boxbackground"></p>
+    <div class="gradient"></div>
+</body>
+
+</html>

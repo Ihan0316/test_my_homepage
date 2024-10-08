@@ -1,199 +1,204 @@
 /* 공통 스타일 */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f5f5f7;
-    margin: 0;
-    padding: 0;
-    padding-top: 60px;
-    /* 상단 버튼 공간 확보 */
-    box-sizing: border-box;
-    color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f5f5f7;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  /* 상단 버튼 공간 확보 */
+  box-sizing: border-box;
+  color: #1d1d1f;
 }
 
 /* 기본 텍스트 스타일 */
 h1,
 h2,
 p {
-    color: #1d1d1f;
-    margin: 0;
-    padding: 0;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* 공통 링크 스타일 */
 a {
-    color: #007aff;
-    text-decoration: none;
+  color: #007aff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:active {
-    color: #003f7f;
+  color: #003f7f;
 }
 
 /* 네비게이션 및 리스트 스타일 */
 #grid {
-    display: flex;
-    justify-content: space-between;
-    /* 요소 사이 간격 */
-    padding: 40px;
-    gap: 20px;
-    /* 요소 간격 */
+  display: flex;
+  justify-content: space-between;
+  /* 요소 사이 간격 */
+  padding: 40px;
+  gap: 20px;
+  /* 요소 간격 */
 }
 
 ul,
 ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    margin-right: 40px;
-    /* ul과 article 사이 간격 */
+  margin-right: 40px;
+  /* ul과 article 사이 간격 */
 }
 
 ol {
-    list-style: decimal;
-    margin-left: 40px;
-    /* article과 ol 사이 간격 */
+  list-style: decimal;
+  margin-left: 40px;
+  /* article과 ol 사이 간격 */
 }
 
 li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 li a {
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
 }
 
 /* 자기소개 콘텐츠 스타일 */
 #article {
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 0 auto;
 }
 
 /* 이미지 스타일 */
 img {
-    width: 30%;
-    border-radius: 12px;
-    margin: 10px 0;
-    /* 이미지 사이 간격 */
+  width: 30%;
+  border-radius: 12px;
+  margin: 10px 0;
+  /* 이미지 사이 간격 */
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* 로그인 및 회원가입 폼 스타일 */
 .form-container {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .form-container h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form-container input[type="text"],
 .form-container input[type="password"],
 .form-container input[type="email"],
 .form-container input[type="file"] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .form-container button {
-    width: 100%;
-    background-color: #0071e3;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  background-color: #0071e3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .form-container button:hover {
-    background-color: #005bb5;
+  background-color: #005bb5;
 }
 
 /* 로그인 페이지 링크 스타일 */
 .nav-link {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .nav-link a {
-    font-weight: bold;
-    color: #007aff;
+  font-weight: bold;
+  color: #007aff;
 }
 
 .nav-link a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 /* 애플 스타일 버튼 */
 .apple-button {
-    background-color: #007aff;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: background-color 0.3s ease;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .apple-button:hover {
-    background-color: #005bb5;
+  background-color: #005bb5;
 }
 
 .apple-button:active {
-    background-color: #003f7f;
+  background-color: #003f7f;
+}
+
+#mainlink img {
+  width: 5%;
 }
