@@ -1,3 +1,42 @@
+body {
+    display: inline;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
 .font {
     font-style: oblique;
 }
@@ -7,7 +46,7 @@ div.fontbox {
     color: azure;
 }
 
-a {
+div a {
     background-color: blueviolet;
     color: antiquewhite;
     padding: 5px 10px;
@@ -55,6 +94,31 @@ a {
 
 .gradient {}
 
+.selector p {
+    color: rgb(149, 255, 0);
+}
+
+.href a[href] {
+    color: rgb(221, 0, 255);
+}
+
+.href a[target="_blank"] {
+    color: red;
+}
+
+h2+p {
+    color: blue;
+}
+
+a[title^="test"] {
+    color: green;
+}
+
+.home input:checked+label {
+    color: red;
+    font-weight: bold;
+}
+
 .boxs {
     width: 100px;
     height: 100px;
@@ -63,8 +127,6 @@ a {
 }
 
 @keyframes rotates {
-
-    /* 0도 -> x축 -180도 회전 -> y축 -180도 회전 */
     from {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
@@ -79,8 +141,6 @@ a {
 }
 
 @keyframes background {
-
-    /* 배경색 빨강 -> 초록 -> 파랑 */
     from {
         background-color: rgb(0, 166, 255);
     }
@@ -110,53 +170,42 @@ a {
     background-color: rgb(88, 249, 255);
     border: 1px solid transparent;
     animation-name: shape;
-    /* 애니메이션 지정 */
+
     animation-duration: 3s;
-    /* 애니메이션 실행 시간 */
+
     animation-iteration-count: infinite;
-    /* 애니메이션 무한 반복 */
+
     animation-direction: alternate;
-    /* 애니메이션 위치 원래대로 */
 }
 
 #box2 {
     background-color: #6161ff;
     border: 1px solid transparent;
     animation-name: rotate;
-    /* 애니메이션 지정 */
+
     animation-duration: 3s;
-    /* 애니메이션 실행 시간 */
+
     animation-iteration-count: infinite;
-    /* 애니메이션 무한 반복 */
 }
 
 @keyframes shape {
-
-    /* shape 애니메이션 정의 */
     from {
         border: 1px solid transparent;
-        /* 1px짜리 투명한 테두리 */
     }
 
     to {
         border: 1px solid #000;
-        /* 검정색 테두리 */
         border-radius: 50%;
-        /* 테두리를 둥글게 */
     }
 }
 
 @keyframes rotate {
-
-    /* rotate 애니메이션 정의 */
     from {
         transform: rotate(0deg);
-        /* 시작은 0도에서 */
     }
 
     to {
         transform: rotate(45deg);
-        /* 45도까지 회전 */
     }
 }
 
@@ -167,13 +216,17 @@ a {
     background-color: rgb(255, 244, 117);
     border: 1px solid #717171;
     transition-property: width, height;
-    /* 트랜지션 대상 - 너비, 높이 */
     transition-duration: 1s, 0.5s;
-    /* 트랜지션 시간 - 2초, 1초 */
     clear: both;
 }
 
 .box3:hover {
     width: 300px;
     height: 200px;
+}
+
+/* 12단원 */
+#click_change {
+    cursor: pointer;
+    font-size: 16px;
 }
