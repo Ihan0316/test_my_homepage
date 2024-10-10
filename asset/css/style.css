@@ -198,7 +198,9 @@ img {
 
 /* 이미지 크기 조정 */
 #mainlink img {
-  width: 5%;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 768px){}
