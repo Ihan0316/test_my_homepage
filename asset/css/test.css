@@ -1,5 +1,6 @@
 body {
     display: inline;
+    {background-image: url("../img/bg.jpg");}
 }
 
 nav {
@@ -63,8 +64,8 @@ div a {
 }
 
 .listtest li {
-    background-image: url(img/list_icon.png);
-    background-size: 25px;
+    background-image: url(asset/img/bg.png);
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: 0 50%;
     padding-left: 30px;
@@ -81,18 +82,9 @@ div a {
     border: 1px solid black;
     margin: 20px;
     padding: 20px;
-    align-content: space-around;
+    float: left;
     box-shadow: 5px 5px 30px 15px;
 }
-
-.boxbackground {
-    background-image: url(img/background.jpg);
-    background-size: cover;
-    width: 300px;
-    height: 200px;
-}
-
-.gradient {}
 
 .selector p {
     color: rgb(149, 255, 0);
@@ -225,7 +217,6 @@ a[title^="test"] {
     height: 200px;
 }
 
-/* 12단원 */
 #click_change {
     cursor: pointer;
     font-size: 16px;
