@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mini test3</title>
-    <link rel="stylesheet" href="asset/css/test2.css">
+    <link rel="stylesheet" href="asset/css/test2.css"> <!-- CSS 파일 링크 -->
 </head>
 
 <body>
-    
+
     <!-- 네비게이션 섹션 -->
     <nav>
         <ul>
@@ -21,17 +21,21 @@
             <li><a href="10_test.html">mini test3.html</a></li>
         </ul>
     </nav>
-    <div>
+
+    <!-- 음식 카테고리 선택 -->
+    <div class="food">
         <ul>
             <li><a href="#" onclick="changeBg('asset/img/한식.png')">한식</a></li>
             <li><a href="#" onclick="changeBg('asset/img/양식.png')">양식</a></li>
             <li><a href="#" onclick="changeBg('asset/img/일식.png')">일식</a></li>
         </ul>
     </div>
+
+    <!-- 결과 섹션 -->
     <div id="result"></div>
 
-    <script>function changeBg(backgroundImg) {
-
+    <script>
+        function changeBg(backgroundImg) {
             var result = document.querySelector('#result');
             result.style.backgroundImage = 'url(' + backgroundImg + ')';
         }

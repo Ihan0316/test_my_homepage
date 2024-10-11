@@ -1,30 +1,72 @@
-a:link, a:visited {
-	color:black;
+body {
+	margin-top: 60px;
+	/* 네비게이션 높이만큼 여백 추가 */
+}
+
+nav {
+	background-color: #f8f9fa;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	/* 네비게이션 그림자 추가 */
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	padding: 10px 20px;
 	text-decoration: none;
 }
-ul {
-	list-style: none;
-	width:500px;
-	margin:10px auto;
-	padding:0;
+
+nav ul li a:hover {
+	background-color: #ddd;
+	border-radius: 5px;
 }
-li {
-	display:inline-block;
-	width:120px;
-	border:1px solid #ccc;
-	padding:10px 15px;	
-	font-size:16px;
-	text-align:center;
-}
+
 #result {
-	width:500px;
-	height:300px;
-	margin:30px auto;
-	border:2px solid #ccc;
-	border-radius:15px;
+	width: 500px;
+	height: 300px;
+	margin: 30px auto;
+	border: 2px solid #ccc;
+	border-radius: 15px;
+	background-size: cover;
+	background-position: center;
 }
-p {
-	width:80%;
-	padding:10px;
-	line-height: 2em;
+
+.food {
+	width: 500px;
+	margin: 20px auto;
+	/* 자동으로 중앙 정렬 */
+}
+
+.food ul {
+	list-style: none;
+	padding: 0;
+}
+
+.food li {
+	display: inline-block;
+	width: 120px;
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	font-size: 16px;
+	text-align: center;
 }
