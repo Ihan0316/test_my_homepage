@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini test3</title>
+    <link rel="stylesheet" href="asset/css/test2.css">
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a href="#" onclick="changeBg('asset/img/한식.png')">한식</a></li>
+            <li><a href="#" onclick="changeBg('asset/img/양식.png')">양식</a></li>
+            <li><a href="#" onclick="changeBg('asset/img/일식.png')">일식</a></li>
+        </ul>
+    </div>
+    <div id="result"></div>
+
+    <script>function changeBg(backgroundImg) {
+        
+        var result = document.querySelector('#result');
+        result.style.backgroundImage = 'url(' + backgroundImg + ')';
+        }
+    </script>
+</body>
+
+</html>
