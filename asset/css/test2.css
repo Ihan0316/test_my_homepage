@@ -1,8 +1,10 @@
+/* 전체 여백 설정 */
 body {
 	margin-top: 60px;
 	/* 네비게이션 높이만큼 여백 추가 */
 }
 
+/* 네비게이션 스타일 */
 nav {
 	background-color: #f8f9fa;
 	padding: 10px 0;
@@ -41,6 +43,7 @@ nav ul li a:hover {
 	border-radius: 5px;
 }
 
+/* 결과 섹션 스타일 */
 #result {
 	width: 500px;
 	height: 300px;
@@ -51,6 +54,7 @@ nav ul li a:hover {
 	background-position: center;
 }
 
+/* 음식 카테고리 섹션 */
 .food {
 	width: 500px;
 	margin: 20px auto;
@@ -69,4 +73,21 @@ nav ul li a:hover {
 	padding: 10px 15px;
 	font-size: 16px;
 	text-align: center;
+}
+
+/* 메뉴 정보 스타일 */
+.menu-info {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	display: inline-block;
+	color: white;
+}
+
+.menu-name {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.menu-price {
+	font-size: 18px;
 }

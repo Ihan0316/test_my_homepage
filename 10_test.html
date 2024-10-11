@@ -25,21 +25,30 @@
     <!-- 음식 카테고리 선택 -->
     <div class="food">
         <ul>
-            <li><a href="#" onclick="changeBg('asset/img/한식.png')">한식</a></li>
-            <li><a href="#" onclick="changeBg('asset/img/양식.png')">양식</a></li>
-            <li><a href="#" onclick="changeBg('asset/img/일식.png')">일식</a></li>
+            <li><a href="#" onclick="changeMenu('수제마늘곱창', 'asset/img/한식.png', '₩26,000')">한식</a></li>
+            <li><a href="#" onclick="changeMenu('트러플베이컨까르보나라', 'asset/img/양식.png', '₩15,000')">양식</a></li>
+            <li><a href="#" onclick="changeMenu('차슈덮밥', 'asset/img/일식.png', '₩6,000')">일식</a></li>
         </ul>
     </div>
 
     <!-- 결과 섹션 -->
-    <div id="result"></div>
+    <div id="result">
+        <!-- 선택된 메뉴 정보가 여기에 표시됩니다 -->
+    </div>
 
     <script>
-        function changeBg(backgroundImg) {
+        function changeMenu(name, img, price) {
             var result = document.querySelector('#result');
-            result.style.backgroundImage = 'url(' + backgroundImg + ')';
+            result.style.backgroundImage = 'url(' + img + ')';
+            result.innerHTML = `
+                <div class="menu-info">
+                    <div class="menu-name">메뉴: ${name}</div>
+                    <div class="menu-price">가격: ${price}</div>
+                </div>
+            `;
         }
     </script>
+
 </body>
 
 </html>
