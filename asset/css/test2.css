@@ -64,15 +64,25 @@ nav ul li a:hover {
 .food ul {
 	list-style: none;
 	padding: 0;
+	margin: 20px auto;
 }
 
 .food li {
 	display: inline-block;
-	width: 120px;
+	width: 130px;
 	border: 1px solid #ccc;
 	padding: 10px 15px;
 	font-size: 16px;
 	text-align: center;
+	border-radius: 15px;
+}
+
+.food a {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	padding: 10px 20px;
+	text-decoration: none;
 }
 
 /* 메뉴 정보 스타일 */
