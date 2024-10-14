@@ -2,6 +2,7 @@
 body {
 	margin-top: 60px;
 	/* 네비게이션 높이만큼 여백 추가 */
+	position: relative;
 }
 
 /* 네비게이션 스타일 */
@@ -45,27 +46,27 @@ nav ul li a:hover {
 
 /* 결과 섹션 스타일 */
 #result {
-	width: 500px;
+	width: 500px; /* 고정된 가로 크기 */
+	height: 300px; /* 고정된 세로 크기 */
 	margin: 30px auto;
 	border: 2px solid #ccc;
 	border-radius: 15px;
 	padding: 20px;
-	/* 메뉴 정보와 이미지 간 여백 */
 	text-align: center;
-	/* 이미지 및 텍스트가 가운데 정렬되도록 */
+	position: relative;
+	overflow-y: auto; /* 결과 섹션이 길어질 때 스크롤 추가 */
 }
 
 /* 음식 카테고리 섹션 */
 .food {
 	width: 500px;
-	margin: 20px auto;
-	/* 자동으로 중앙 정렬 */
+	margin: auto;
 }
 
 .food ul {
 	list-style: none;
 	padding: 0;
-	margin: 20px auto;
+	margin: auto;
 }
 
 .food li {
@@ -92,8 +93,6 @@ nav ul li a:hover {
 	padding: 10px;
 	display: inline-block;
 	color: white;
-	margin-top: 15px;
-	/* 이미지와 메뉴 정보 간 여백 */
 	border-radius: 10px;
 }
 
@@ -110,9 +109,86 @@ nav ul li a:hover {
 .menu-img {
 	width: 100%;
 	max-width: 500px;
-	/* 이미지 크기를 결과 섹션 너비에 맞춤 */
 	display: block;
 	margin: 0 auto;
-	/* 이미지를 가운데로 정렬 */
 	border-radius: 10px;
+}
+
+/* 랜덤 버튼 스타일 */
+#random-button {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 랜덤 버튼 호버 효과 */
+#random-button:hover {
+	background-color: #0056b3;
+}
+
+/* 새로운 메뉴 리스트 출력 섹션 스타일 */
+#new-menu-section {
+	width: 500px;
+	margin: 30px auto;
+	border: 2px solid #ffffff;
+	background-color: #ffffff;
+}
+
+#itemList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#itemList li {
+	background-color: #a4d0ff;
+	color: white;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#itemList li:hover {
+	background-color: #0056b3;
+}
+
+/* 추가 메뉴 입력 섹션 스타일 */
+#menu-input {
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#menu-input input {
+	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	margin-right: 10px;
+}
+
+#menu-input button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#menu-input button:hover {
+	background-color: #a4d0ff;
 }
