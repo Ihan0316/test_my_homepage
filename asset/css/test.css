@@ -30,6 +30,7 @@ nav ul li a {
     font-weight: 600;
     color: black;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
