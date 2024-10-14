@@ -33,14 +33,15 @@
 
     <!-- 결과 섹션 -->
     <div id="result">
-        <!-- 선택된 메뉴 정보가 여기에 표시됩니다 -->
         <button id="random-button" onclick="randomSelect()">랜덤 선택</button>
     </div>
 
     <!-- 추가 메뉴 입력 섹션 -->
     <div id="menu-input">
-        <input type="text" id="subject" placeholder="새로운 메뉴를 입력하세요">
-        <button onclick="newRegister()">메뉴 추가</button>
+        <form action="" onsubmit="newRegister(); return false;">
+            <input type="text" id="subject" placeholder="새로운 메뉴를 입력하세요" autofocus>
+            <button type="submit">메뉴 추가</button>
+        </form>
     </div>
 
     <!-- 새로운 메뉴 리스트 출력 섹션 -->
@@ -70,22 +71,28 @@
         }
 
         function newRegister() {
-            var newItem = document.createElement("li");
             var subject = document.querySelector("#subject");
+            var newItem = document.createElement("li");
             var newText = document.createTextNode(subject.value);
-            newItem.appendChild(newText);
 
-            if(subject.value.trim() !== "") {
+            if (subject.value.trim() !== "") {
+                newItem.appendChild(newText);
                 var itemList = document.querySelector("#itemList");
                 itemList.insertBefore(newItem, itemList.childNodes[0]);
                 subject.value = "";
-            }
 
-            newItem.addEventListener("click", function () {
-                if (this.parentNode) {
-                    this.parentNode.removeChild(this);
-                }
-            });
+                newItem.addEventListener("click", function () {
+                    if (this.parentNode) {
+                        this.parentNode.removeChild(this);
+                    }
+                });
+            }
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                newRegister();
+            }
         }
     </script>
 
