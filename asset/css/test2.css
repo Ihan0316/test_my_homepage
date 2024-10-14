@@ -160,7 +160,7 @@ nav ul li a:hover {
 }
 
 #itemList li:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
 }
 
 /* 추가 메뉴 입력 섹션 스타일 */
@@ -182,12 +182,12 @@ nav ul li a:hover {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #a4d0ff;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 #menu-input button:hover {
-    background-color: #a4d0ff;
+    background-color: #007bff;
 }
