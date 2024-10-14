@@ -3,6 +3,8 @@ body {
     margin-top: 60px;
     /* 네비게이션 높이만큼 여백 추가 */
     position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
 }
 
 a {
