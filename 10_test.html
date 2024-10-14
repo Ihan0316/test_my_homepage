@@ -39,9 +39,9 @@
     <script>
         function changeMenu(name, img, price) {
             var result = document.querySelector('#result');
-            result.style.backgroundImage = 'url(' + img + ')';
             result.innerHTML = `
                 <div class="menu-info">
+                    <img src="${img}" alt="${name}" class="menu-img">
                     <div class="menu-name">메뉴: ${name}</div>
                     <div class="menu-price">가격: ${price}</div>
                 </div>

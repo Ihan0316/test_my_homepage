@@ -46,12 +46,13 @@ nav ul li a:hover {
 /* 결과 섹션 스타일 */
 #result {
 	width: 500px;
-	height: 300px;
 	margin: 30px auto;
 	border: 2px solid #ccc;
 	border-radius: 15px;
-	background-size: cover;
-	background-position: center;
+	padding: 20px;
+	/* 메뉴 정보와 이미지 간 여백 */
+	text-align: center;
+	/* 이미지 및 텍스트가 가운데 정렬되도록 */
 }
 
 /* 음식 카테고리 섹션 */
@@ -91,6 +92,9 @@ nav ul li a:hover {
 	padding: 10px;
 	display: inline-block;
 	color: white;
+	margin-top: 15px;
+	/* 이미지와 메뉴 정보 간 여백 */
+	border-radius: 10px;
 }
 
 .menu-name {
@@ -100,4 +104,15 @@ nav ul li a:hover {
 
 .menu-price {
 	font-size: 18px;
+}
+
+/* 이미지 스타일 */
+.menu-img {
+	width: 100%;
+	max-width: 500px;
+	/* 이미지 크기를 결과 섹션 너비에 맞춤 */
+	display: block;
+	margin: 0 auto;
+	/* 이미지를 가운데로 정렬 */
+	border-radius: 10px;
 }
