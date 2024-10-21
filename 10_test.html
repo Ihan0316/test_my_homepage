@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini test3</title>
+    <link rel="stylesheet" href="asset/css/test2.css"> <!-- CSS 파일 링크 -->
+</head>
+
+<body>
+
+    <!-- 네비게이션 섹션 -->
+    <nav>
+        <ul>
+            <li><a href="1_haru.html">하루소개</a></li>
+            <li><a href="2_koong.html">쿵이소개</a></li>
+            <li><a href="3_home.html">집가구싶당....</a></li>
+            <li><a href="8_test.html">Mini test1</a></li>
+            <li><a href="9_test.html">Mini test2</a></li>
+            <li><a href="10_test.html">Mini test3</a></li>
+            <li><a href="11_test.html">Mini test4</a></li>
+        </ul>
+    </nav>
+
+    <!-- 음식 카테고리 선택 -->
+    <div class="food">
+        <ul id="food-list">
+            <li><a href="#" onclick="changeMenu('수제마늘곱창', 'asset/img/한식.png', '₩26,000')">한식</a></li>
+            <li><a href="#" onclick="changeMenu('트러플베이컨까르보나라', 'asset/img/양식.png', '₩15,000')">양식</a></li>
+            <li><a href="#" onclick="changeMenu('차슈덮밥', 'asset/img/일식.png', '₩6,000')">일식</a></li>
+        </ul>
+    </div>
+
+    <!-- 결과 섹션 -->
+    <div id="result">
+        <button id="random-button" onclick="randomSelect()">랜덤 선택</button>
+    </div>
+
+    <!-- 추가 메뉴 입력 섹션 -->
+    <div id="menu-input">
+        <form action="" onsubmit="newRegister(); return false;">
+            <input type="text" id="subject" placeholder="새로운 메뉴를 입력하세요" autofocus>
+            <button type="submit">메뉴 추가</button>
+        </form>
+    </div>
+
+    <!-- 새로운 메뉴 리스트 출력 섹션 -->
+    <div id="new-menu-section">
+        <ul id="itemList">
+            <!-- 새로 추가된 메뉴들이 여기에 출력됩니다 -->
+        </ul>
+    </div>
+
+    <script>
+        function changeMenu(name, img, price) {
+            var result = document.querySelector('#result');
+            result.innerHTML = `
+                <div class="menu-info">
+                    <img src="${img}" alt="${name}" class="menu-img">
+                    <div class="menu-name">메뉴: ${name}</div>
+                    <div class="menu-price">가격: ${price}</div>
+                </div>
+                <button id="random-button" onclick="randomSelect()">랜덤 선택</button>
+            `;
+        }
+
+        function randomSelect() {
+            var items = document.querySelectorAll('#food-list li a');
+            var randomItem = items[Math.floor(Math.random() * items.length)];
+            randomItem.click();
+        }
+
+        function newRegister() {
+            var subject = document.querySelector("#subject");
+            var newItem = document.createElement("li");
+            var newText = document.createTextNode(subject.value);
+
+            if (subject.value.trim() !== "") {
+                newItem.appendChild(newText);
+                var itemList = document.querySelector("#itemList");
+                itemList.insertBefore(newItem, itemList.childNodes[0]);
+                subject.value = "";
+
+                newItem.addEventListener("click", function () {
+                    if (this.parentNode) {
+                        this.parentNode.removeChild(this);
+                    }
+                });
+            }
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                newRegister();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

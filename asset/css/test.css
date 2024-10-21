@@ -1,0 +1,277 @@
+body {
+    display: inline;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+	color: #007aff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0056b3;
+}
+
+a:active {
+	color: #003f7f;
+}
+
+nav {
+	background-color: #f8f9fa;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	padding: 10px 20px;
+}
+
+nav ul li a:hover {
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
+.font {
+    font-style: oblique;
+}
+
+div.fontbox {
+    background-color: rgb(30, 50, 98);
+    color: azure;
+}
+
+div a {
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+.fontstyle {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.listtest li {
+    background-image: url(asset/img/bg.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 30px;
+}
+
+.listtest {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.boxsize {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+    box-shadow: 5px 5px 30px 15px;
+}
+
+.bg {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border: 5px solid black;
+    background-image: url("../img/bg.jpg");
+}
+
+#bg_img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gradient {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background: #6161ff;
+    background: radial-gradient(circle, white, #6161ff, blueviolet);
+}
+
+.selector p {
+    color: rgb(149, 255, 0);
+}
+
+.href a[href] {
+    color: rgb(221, 0, 255);
+}
+
+.href a[target="_blank"] {
+    color: red;
+}
+
+h2+p {
+    color: blue;
+}
+
+a[title^="test"] {
+    color: green;
+}
+
+.home input:checked+label {
+    color: red;
+    font-weight: bold;
+}
+
+.boxs {
+    width: 100px;
+    height: 100px;
+    margin: 60px auto;
+    animation: rotates 1.5s infinite, background 1.5s infinite alternate;
+}
+
+@keyframes rotates {
+    from {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+@keyframes background {
+    from {
+        background-color: rgb(0, 166, 255);
+    }
+
+    50% {
+        background-color: rgb(128, 210, 255);
+    }
+
+    to {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+#container {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 50px;
+}
+
+#box1 {
+    background-color: rgb(88, 249, 255);
+    border: 1px solid transparent;
+    animation-name: shape;
+
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+
+#box2 {
+    background-color: #6161ff;
+    border: 1px solid transparent;
+    animation-name: rotate;
+
+    animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes shape {
+    from {
+        border: 1px solid transparent;
+    }
+
+    to {
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+.box3 {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 244, 117);
+    border: 1px solid #717171;
+    transition-property: width, height;
+    transition-duration: 1s, 0.5s;
+    clear: both;
+}
+
+.box3:hover {
+    width: 300px;
+    height: 200px;
+}
+
+#click_change {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.media {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .media {
+        background: url(../img/bg1.jpeg) no-repeat fixed;
+        background-size: cover;
+    }
+}

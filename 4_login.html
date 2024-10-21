@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="asset/css/login, join.css">
+    <script src="asset/js/colors.js"></script>
+</head>
+
+<body>
+    <input type="button" value="night" onclick="nightDayHandler(this);">
+    <div class="container">
+        <h2>로그인</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="ID" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="link-container">
+            <a href="5_join.html">계정이 없으신가요? 회원가입</a>
+        </div>
+        <div class="link-container">
+            <a href="#">ID 또는 비밀번호를 잊으셨나요?</a>
+        </div>
+        <div class="link-container">
+            <a href="index.html">메인화면 가기</a>
+        </div>
+    </div>
+</body>
+
+</html>

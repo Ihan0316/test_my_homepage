@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="asset/css/login, join.css">
+    <script src="asset/js/colors.js"></script>
+</head>
+
+<body>
+    <input type="button" value="night" onclick="nightDayHandler(this);">
+    <div class="container">
+        <h2>회원가입</h2>
+        <div class="profile-picture">
+            <!-- 기본 프로필 이미지 설정 -->
+            <img id="profileImage" src="imgdefault-profile.png" alt="프로필 이미지">
+        </div>
+        <input type="file" id="imageUpload" accept="image/*" onchange="loadFile(event)" style="margin-bottom: 20px;">
+
+        <form action="/signup" method="post">
+            <input type="text" name="fullname" placeholder="이름" required>
+            <input type="email" name="email" placeholder="이메일" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <input type="password" name="confirm_password" placeholder="비밀번호 확인" required>
+            <button type="submit">회원가입</button>
+        </form>
+        <div class="link-container">
+            <a href="4_login.html">이미 계정이 있으신가요? 로그인</a>
+        </div>
+        <div class="link-container">
+            <a href="index.html">메인화면 가기</a>
+
+        </div>
+
+        <script>
+            // 프로필 이미지 미리보기 기능
+            function loadFile(event) {
+                var image = document.getElementById('profileImage');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
+    </div>
+</body>
+
+</html>

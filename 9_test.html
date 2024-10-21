@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini test2</title>
+    <link rel="stylesheet" href="asset/css/test.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+
+<body>
+
+    <!-- 네비게이션 섹션 -->
+    <nav>
+        <ul>
+            <li><a href="1_haru.html">하루소개</a></li>
+            <li><a href="2_koong.html">쿵이소개</a></li>
+            <li><a href="3_home.html">집가구싶당....</a></li>
+            <li><a href="8_test.html">Mini test1</a></li>
+            <li><a href="9_test.html">Mini test2</a></li>
+            <li><a href="10_test.html">Mini test3</a></li>
+            <li><a href="11_test.html">Mini test4</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- 10단원 섹션 -->
+    <section>
+        <h2>10단원</h2>
+        <p><b>내용:</b>속성 선택자, 속성=값 선택자, 속성^=값, 가상클래스</p>
+        <p><a href="#" title="test" target="_blank">test contents..</a></p>
+
+        <div class="selector">
+            <p>test contents1...</p>
+            <p>test contents2...</p>
+        </div>
+
+        <p class="href">
+            <a href="#" target="_blank">href color test contents3...</a>
+        </p>
+        <p class="href">
+            <a href="#">href color test contents4...</a>
+        </p>
+        <p class="href">
+            <a href="#">href color test contents5...</a>
+        </p>
+
+        <div class="home">
+            <fieldset>
+                <legend>내맘대로 test</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="home" id="home" checked>
+                        <label for="home">집</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="home" id="going">
+                        <label for="going">가고프다..</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- 11단원 섹션 -->
+    <section>
+        <h1>11단원</h1>
+        <p><b>내용:</b>@keyframes, animation, animation-duration, animation-iteration-count, transform</p>
+
+        <div class="boxs"></div>
+
+        <div id="container">
+            <div class="box1" id="box1"></div>
+            <div class="box1" id="box2"></div>
+        </div>
+
+        <div class="box3"></div>
+    </section>
+
+    <!-- 12단원 섹션 -->
+    <section>
+        <h1>12단원</h1>
+        <p><b>내용:</b>media quary, display, justify-contents, align-items</p>
+        <div class="media">화면을 1000px이하로 줄여보세요!!</div>
+
+    </section>
+
+    <!-- 13단원 섹션 -->
+    <section>
+        <h1>13단원</h1>
+        <p><b>내용:Java Script</b></p>
+
+        <h3 id="click_change">클릭시 폰트의 사이즈와 색상을 js로 변경</h3>
+        <script src="asset/js/test.js"></script>
+
+        <script>
+            var name = prompt("이름을 입력해주세요");
+            document.write("안녕하세요 <b style='color:grey; font-size:25px;'>" + name + "</b> 님!!");
+        </script>
+    </section>
+</body>
+
+</html>

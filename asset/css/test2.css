@@ -1,0 +1,207 @@
+/* 전체 여백 설정 */
+body {
+    margin-top: 60px;
+    /* 네비게이션 높이만큼 여백 추가 */
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+	color: #007aff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0056b3;
+}
+
+a:active {
+	color: #003f7f;
+}
+
+/* 네비게이션 스타일 */
+nav {
+	background-color: #f8f9fa;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+	padding: 10px 20px;
+}
+
+nav ul li a:hover {
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
+/* 결과 섹션 스타일 */
+#result {
+    width: 500px; /* 고정된 가로 크기 */
+    height: 300px; /* 고정된 세로 크기 */
+    margin: 30px auto;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* 음식 카테고리 섹션 */
+.food {
+    width: 500px;
+    margin: auto;
+}
+
+.food ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.food li {
+    display: inline-block;
+    width: 130px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.food a {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* 메뉴 정보 스타일 */
+.menu-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+}
+
+.menu-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-price {
+    font-size: 18px;
+}
+
+/* 이미지 스타일 */
+.menu-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* 랜덤 버튼 스타일 */
+#random-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 랜덤 버튼 호버 효과 */
+#random-button:hover {
+    background-color: #0056b3;
+}
+
+/* 새로운 메뉴 리스트 출력 섹션 스타일 */
+#new-menu-section {
+    width: 500px;
+    margin: 30px auto;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+
+#itemList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#itemList li {
+    background-color: #a4d0ff;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#itemList li:hover {
+    background-color: #007bff;
+}
+
+/* 추가 메뉴 입력 섹션 스타일 */
+#menu-input {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#menu-input input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+}
+
+#menu-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a4d0ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#menu-input button:hover {
+    background-color: #007bff;
+}
